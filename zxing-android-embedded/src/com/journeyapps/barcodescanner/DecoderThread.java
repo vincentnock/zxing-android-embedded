@@ -67,7 +67,7 @@ public class DecoderThread {
 
     /**
      * Start decoding.
-     *
+     * <p>
      * This must be called from the UI thread.
      */
     public void start() {
@@ -82,7 +82,7 @@ public class DecoderThread {
 
     /**
      * Stop decoding.
-     *
+     * <p>
      * This must be called from the UI thread.
      */
     public void stop() {
@@ -131,7 +131,7 @@ public class DecoderThread {
         sourceData.setCropRect(cropRect);
         LuminanceSource source = createSource(sourceData);
 
-        if(source != null) {
+        if (source != null) {
             rawResult = decoder.decode(source);
         }
 
